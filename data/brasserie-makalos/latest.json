@@ -1,0 +1,68 @@
+{
+  "restaurantId": "brasserie-makalos",
+  "restaurantName": "Brasserie Makalös",
+  "sourceUrl": "https://www.brasseriemakalos.se/lunchmeny/",
+  "scrapedAt": "2026-04-23T12:18:02.711Z",
+  "extractedBy": "claude",
+  "weekNumber": 17,
+  "year": 2026,
+  "currency": "SEK",
+  "priceNote": "Dagens Lunch 175 kr, mån - fre 11.30-15.00, lör 12:30-15:00",
+  "days": [
+    {
+      "day": "Måndag",
+      "dishes": [
+        {
+          "name": "Boeuf Bourguignon",
+          "description": "nattbakad högrev, champinjon, bacon, pärllök, potatispuré",
+          "category": "Kött",
+          "price": 175
+        }
+      ]
+    },
+    {
+      "day": "Tisdag",
+      "dishes": [
+        {
+          "name": "Majskycklingfilé",
+          "description": "citronmarinerad, blomkålstabbouleh, dragon & dijondressing",
+          "category": "Kött",
+          "price": 175
+        }
+      ]
+    },
+    {
+      "day": "Onsdag",
+      "dishes": [
+        {
+          "name": "Grillad lax schnitzel",
+          "description": "dillpotatis, spenat, pocherat ägg, hollandaise",
+          "category": "Fisk",
+          "price": 175
+        }
+      ]
+    },
+    {
+      "day": "Torsdag",
+      "dishes": [
+        {
+          "name": "Biff stroganoff",
+          "description": "Saltgurka, champinjoner, grädde, paprika, crème fraiche",
+          "category": "Kött",
+          "price": 175
+        }
+      ]
+    },
+    {
+      "day": "Fredag",
+      "dishes": [
+        {
+          "name": "Mixed grill",
+          "description": "bakad tomat, haricots verts, pepparsås",
+          "category": "Kött",
+          "price": 175
+        }
+      ]
+    }
+  ]
+}
