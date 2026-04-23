@@ -3,9 +3,9 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { fetchHtml } from "./fetch.js";
+import { fetchDocument } from "./fetch.js";
 import { extractMenuWithClaude } from "./claude.js";
-import { weekKey } from "./week.js";
+import { isoWeek, mondayOf, weekKey } from "./week.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -25,17 +25,18 @@ async function loadParser(id) {
 }
 
 async function scrapeOne(r) {
-  console.log(`\n→ ${r.name} (${r.url})`);
-  const html = await fetchHtml(r.url);
-  console.log(`  fetched ${html.length} bytes`);
+  const resolvedUrl = resolveUrl(r.url);
+  console.log(`\n→ ${r.name} (${resolvedUrl})`);
+  const doc = await fetchDocument(resolvedUrl);
+  console.log(`  fetched ${doc.kind === "pdf" ? `${doc.buffer.length} bytes (pdf)` : `${doc.html.length} bytes (html)`}`);
 
-  const parser = await loadParser(r.parser);
+  const parser = doc.kind === "html" ? await loadParser(r.parser) : null;
   let menu = null;
   let source = "none";
 
   if (parser?.parse && process.env.FORCE_CLAUDE !== "1") {
     try {
-      menu = parser.parse(html);
+      menu = parser.parse(doc.html);
       if (menu) source = "selector";
     } catch (err) {
       console.warn(`  selector parse threw: ${err.message}`);
@@ -43,8 +44,12 @@ async function scrapeOne(r) {
   }
 
   if (!menu || !menu.days?.length) {
-    console.log("  selector parse empty — falling back to Claude");
-    menu = await extractMenuWithClaude({ html, restaurantName: r.name });
+    console.log(`  ${doc.kind === "pdf" ? "pdf source" : "selector parse empty"} — using Claude`);
+    menu = await extractMenuWithClaude({
+      html: doc.kind === "html" ? doc.html : undefined,
+      pdfBuffer: doc.kind === "pdf" ? doc.buffer : undefined,
+      restaurantName: r.name,
+    });
     source = "claude";
   }
 
@@ -54,7 +59,7 @@ async function scrapeOne(r) {
   const payload = {
     restaurantId: r.id,
     restaurantName: r.name,
-    sourceUrl: r.url,
+    sourceUrl: resolvedUrl,
     scrapedAt,
     extractedBy: source,
     ...menu,
@@ -90,6 +95,20 @@ function normalize(menu) {
       if (dish.price == null) dish.price = shared;
     }
   }
+}
+
+// Substitute {YEAR}/{MONTH}/{WEEK} using the ISO week of today's date, with
+// MONTH taken from the Monday of that week (the day WordPress uses when
+// filing weekly menu uploads into /YYYY/MM/ buckets).
+function resolveUrl(template) {
+  if (!template.includes("{")) return template;
+  const { year, week } = isoWeek();
+  const monday = mondayOf();
+  const month = String(monday.getMonth() + 1).padStart(2, "0");
+  return template
+    .replaceAll("{YEAR}", String(year))
+    .replaceAll("{MONTH}", month)
+    .replaceAll("{WEEK}", String(week));
 }
 
 function extractSharedPrice(note) {

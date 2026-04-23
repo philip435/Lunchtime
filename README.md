@@ -7,6 +7,7 @@ static site on GitHub Pages.
 Currently tracked:
 
 - **Grodan Operahuset** — <https://www.grodan.se/operahuset/>
+- **Regeringsgatan 21** — <https://rg21.se/>
 
 ## How it works
 
@@ -51,9 +52,12 @@ cd site && python3 -m http.server 8000
 
 ## Adding a restaurant
 
-1. Append an entry to `data/restaurants.json` (use a kebab-case `id`).
+1. Append an entry to `data/restaurants.json` (use a kebab-case `id`). The
+   `url` may contain `{YEAR}`, `{MONTH}`, `{WEEK}` tokens (resolved against the
+   current ISO week) for sites that publish per-week files like weekly PDFs.
 2. Optionally create `scraper/restaurants/<id>.js` exporting `parse(html)`. If
-   you skip this, Claude will handle extraction directly (costs ~cent per run).
+   you skip this — or the source is a PDF — Claude handles extraction directly
+   (costs ~cent per run). PDFs are sent to Claude as a document block.
 3. Open a PR. The next scheduled run picks it up.
 
 ## Required GitHub setup

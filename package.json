@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "scrape": "node scraper/run.js",
-    "scrape:grodan": "node scraper/run.js grodan-operahuset"
+    "scrape:grodan": "node scraper/run.js grodan-operahuset",
+    "scrape:rg21": "node scraper/run.js regeringsgatan-21"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.68.0",
