@@ -26,14 +26,26 @@ Rules:
 - Preserve Swedish text verbatim. Don't translate.
 - If no menu is present, return {"weekNumber": null, "year": null, "currency": "SEK", "priceNote": null, "days": []}.`;
 
-export async function extractMenuWithClaude({ html, restaurantName }) {
+export async function extractMenuWithClaude({ html, pdfBuffer, restaurantName }) {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
     throw new Error("ANTHROPIC_API_KEY not set — cannot use Claude fallback");
   }
   const client = new Anthropic({ apiKey });
 
-  const trimmed = stripToBody(html).slice(0, 60_000);
+  const userContent = pdfBuffer
+    ? [
+        {
+          type: "document",
+          source: {
+            type: "base64",
+            media_type: "application/pdf",
+            data: pdfBuffer.toString("base64"),
+          },
+        },
+        { type: "text", text: `Restaurant: ${restaurantName}\n\nExtract the weekly lunch menu from the attached PDF.` },
+      ]
+    : `Restaurant: ${restaurantName}\n\nHTML (trimmed to body):\n\n${stripToBody(html).slice(0, 60_000)}`;
 
   const msg = await client.messages.create({
     model: MODEL,
@@ -41,12 +53,7 @@ export async function extractMenuWithClaude({ html, restaurantName }) {
     system: [
       { type: "text", text: SYSTEM_PROMPT, cache_control: { type: "ephemeral" } },
     ],
-    messages: [
-      {
-        role: "user",
-        content: `Restaurant: ${restaurantName}\n\nHTML (trimmed to body):\n\n${trimmed}`,
-      },
-    ],
+    messages: [{ role: "user", content: userContent }],
   });
 
   const text = msg.content

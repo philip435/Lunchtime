@@ -8,6 +8,14 @@
       "lat": 59.3295,
       "lon": 18.0722,
       "parser": "grodan-operahuset"
+    },
+    {
+      "id": "regeringsgatan-21",
+      "name": "Regeringsgatan 21",
+      "url": "https://rg21.se/wp-content/uploads/{YEAR}/{MONTH}/LUNCH-v.{WEEK}.pdf",
+      "area": "Norrmalm",
+      "lat": 59.3333,
+      "lon": 18.0716
     }
   ]
 }
