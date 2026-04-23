@@ -48,6 +48,8 @@ async function scrapeOne(r) {
     source = "claude";
   }
 
+  normalize(menu);
+
   const scrapedAt = new Date().toISOString();
   const payload = {
     restaurantId: r.id,
@@ -69,6 +71,31 @@ async function scrapeOne(r) {
   );
 
   console.log(`  wrote latest.json + history/${weekKey()}.json (source=${source}, days=${menu.days?.length ?? 0})`);
+}
+
+// Post-process the menu in place: default year to current, and if priceNote
+// carries a single shared price and no dish has its own price, stamp that
+// shared price onto each dish so the UI and history data are consistent
+// regardless of whether the selector parser or Claude produced the menu.
+function normalize(menu) {
+  if (!menu) return;
+  if (!menu.year) menu.year = new Date().getFullYear();
+  if (!menu.currency) menu.currency = "SEK";
+
+  const shared = extractSharedPrice(menu.priceNote);
+  if (!shared || !menu.days) return;
+
+  for (const day of menu.days) {
+    for (const dish of day.dishes ?? []) {
+      if (dish.price == null) dish.price = shared;
+    }
+  }
+}
+
+function extractSharedPrice(note) {
+  if (!note) return null;
+  const m = note.match(/(\d{2,4})\s*(kr|:-|SEK)/i);
+  return m ? Number(m[1]) : null;
 }
 
 async function main() {
