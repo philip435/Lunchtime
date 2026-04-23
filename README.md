@@ -8,6 +8,7 @@ Currently tracked:
 
 - **Grodan Operahuset** — <https://www.grodan.se/operahuset/>
 - **Regeringsgatan 21** — <https://rg21.se/>
+- **Brasserie Makalös** — <https://www.brasseriemakalos.se/lunchmeny/>
 
 ## How it works
 
