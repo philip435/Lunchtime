@@ -7,7 +7,8 @@
   "scripts": {
     "scrape": "node scraper/run.js",
     "scrape:grodan": "node scraper/run.js grodan-operahuset",
-    "scrape:rg21": "node scraper/run.js regeringsgatan-21"
+    "scrape:rg21": "node scraper/run.js regeringsgatan-21",
+    "scrape:makalos": "node scraper/run.js brasserie-makalos"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.68.0",

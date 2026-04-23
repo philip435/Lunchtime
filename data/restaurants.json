@@ -16,6 +16,14 @@
       "area": "Norrmalm",
       "lat": 59.3333,
       "lon": 18.0716
+    },
+    {
+      "id": "brasserie-makalos",
+      "name": "Brasserie Makalös",
+      "url": "https://www.brasseriemakalos.se/lunchmeny/",
+      "area": "Kungsträdgården",
+      "lat": 59.3310,
+      "lon": 18.0745
     }
   ]
 }
