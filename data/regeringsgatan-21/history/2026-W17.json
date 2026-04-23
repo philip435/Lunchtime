@@ -1,0 +1,98 @@
+{
+  "restaurantId": "regeringsgatan-21",
+  "restaurantName": "Regeringsgatan 21",
+  "sourceUrl": "https://rg21.se/wp-content/uploads/2026/04/LUNCH-v.17.pdf",
+  "scrapedAt": "2026-04-23T12:04:23.183Z",
+  "extractedBy": "claude",
+  "weekNumber": null,
+  "year": 2026,
+  "currency": "SEK",
+  "priceNote": "Dagens lunch 162 kr ink sallad, bröd, kaffe, te",
+  "days": [
+    {
+      "day": "Måndag",
+      "dishes": [
+        {
+          "name": "Nattbakat högrev",
+          "description": "Chilibearnaisesås, pommes frites, tomat- och löksallad",
+          "category": "Kött",
+          "price": 162
+        },
+        {
+          "name": "Halstrad lax",
+          "description": "Hollandaisesås, citronstompad potatis, ärtor, spenat- och picklad pepparrotssallad",
+          "category": "Fisk",
+          "price": 162
+        }
+      ]
+    },
+    {
+      "day": "Tisdag",
+      "dishes": [
+        {
+          "name": "Friterad kyckling",
+          "description": "Jasminris, sotad purjolök- och sesammajonnäs, het kål- och gurksallad",
+          "category": "Kött",
+          "price": 162
+        },
+        {
+          "name": "Fiskqueneller",
+          "description": "Sandefjordsås, potatispuré, dillolja, späd bladsallad",
+          "category": "Fisk",
+          "price": 162
+        }
+      ]
+    },
+    {
+      "day": "Onsdag",
+      "dishes": [
+        {
+          "name": "Pljeskavica",
+          "description": "Råstekt potatis, ajvarkräm, lök- och persiljesallad",
+          "category": "Kött",
+          "price": 162
+        },
+        {
+          "name": "Friterad sej",
+          "description": "Pommes frites, curryremoulad, citron, zucchini- och myntasallad",
+          "category": "Fisk",
+          "price": 162
+        }
+      ]
+    },
+    {
+      "day": "Torsdag",
+      "dishes": [
+        {
+          "name": "Schnitzel",
+          "description": "Bayersk potatissallad, rödvinssås, rädisa- och körvelsallad",
+          "category": "Kött",
+          "price": 162
+        },
+        {
+          "name": "Halstrad tonfisk",
+          "description": "Jalapenomajonnäs, sötpotatispommes, ananassalsa, koriander",
+          "category": "Fisk",
+          "price": 162
+        }
+      ]
+    },
+    {
+      "day": "Fredag",
+      "dishes": [
+        {
+          "name": "Helstekt biff",
+          "description": "Pommes frites, grönpepparsås, vitlöksstekta bönor",
+          "category": "Kött",
+          "price": 162
+        },
+        {
+          "name": "Örtbakad torsk",
+          "description": "Vitvinssås, kokt potatis, gulbetor, rädisa, sparris, dill",
+          "category": "Fisk",
+          "price": 162
+        }
+      ]
+    }
+  ]
+}

@@ -2,12 +2,12 @@
   "restaurantId": "grodan-operahuset",
   "restaurantName": "Grodan Kungliga Operan",
   "sourceUrl": "https://www.grodan.se/kungligaoperan",
-  "scrapedAt": "2026-04-23T09:12:57.230Z",
-  "extractedBy": "selector",
+  "scrapedAt": "2026-04-23T12:04:13.207Z",
+  "extractedBy": "claude",
   "weekNumber": 17,
   "year": 2026,
   "currency": "SEK",
-  "priceNote": "Måndag- Fredag 11.30- 14.00 195 kr",
+  "priceNote": "Måndag- Fredag 11.30- 14.00: 195 kr",
   "days": [
     {
       "day": "Måndag",
@@ -15,7 +15,7 @@
         {
           "name": "Tonkatsukyckling med krämig kålsallad, grillad lime, tonkatsusås, basmatiris",
           "description": null,
-          "category": null,
+          "category": "Kött",
           "price": 195
         }
       ]
@@ -26,7 +26,7 @@
         {
           "name": "Bakad Laxfjäril med sparris, rädisor, vitvinssås, pommes duchesse",
           "description": null,
-          "category": null,
+          "category": "Fisk",
           "price": 195
         }
       ]
@@ -37,7 +37,7 @@
         {
           "name": "Örtbakad Kycklingbröst med grillad savoykål, kronärtskockscrème, jordärtskockschips, tryffelpuré",
           "description": null,
-          "category": null,
+          "category": "Kött",
           "price": 195
         }
       ]
@@ -48,7 +48,7 @@
         {
           "name": "Ungersk Gulasch med smetanainlagd gurka, champinjon, syrlig morot, stompad potatis",
           "description": null,
-          "category": null,
+          "category": "Kött",
           "price": 195
         }
       ]
@@ -59,7 +59,7 @@
         {
           "name": "Grodans Cordon Bleu med syrad lök, lufttorkad skinka, svampsås, parmesanpotatis",
           "description": null,
-          "category": null,
+          "category": "Kött",
           "price": 195
         }
       ]
