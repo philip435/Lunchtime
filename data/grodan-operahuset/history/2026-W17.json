@@ -5,7 +5,7 @@
   "scrapedAt": "2026-04-23T05:38:39.172Z",
   "extractedBy": "claude",
   "weekNumber": 17,
-  "year": null,
+  "year": 2026,
   "currency": "SEK",
   "priceNote": "Måndag- Fredag 11.30- 14.00 195 kr",
   "days": [
@@ -16,7 +16,7 @@
           "name": "Tonkatsukyckling med krämig kålsallad, grillad lime, tonkatsusås, basmatiris",
           "description": null,
           "category": null,
-          "price": null
+          "price": 195
         }
       ]
     },
@@ -27,7 +27,7 @@
           "name": "Bakad Laxfjäril med sparris, rädisor, vitvinssås, pommes duchesse",
           "description": null,
           "category": "Fisk",
-          "price": null
+          "price": 195
         }
       ]
     },
@@ -38,7 +38,7 @@
           "name": "Örtbakad Kycklingbröst med grillad savoykål, kronärtskockscrème, jordärtskockschips, tryffelpuré",
           "description": null,
           "category": "Kött",
-          "price": null
+          "price": 195
         }
       ]
     },
@@ -49,7 +49,7 @@
           "name": "Ungersk Gulasch med smetanainlagd gurka, champinjon, syrlig morot, stompad potatis",
           "description": null,
           "category": "Kött",
-          "price": null
+          "price": 195
         }
       ]
     },
@@ -60,7 +60,7 @@
           "name": "Grodans Cordon Bleu med syrad lök, lufttorkad skinka, svampsås, parmesanpotatis",
           "description": null,
           "category": "Kött",
-          "price": null
+          "price": 195
         }
       ]
     }
