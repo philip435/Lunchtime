@@ -2,10 +2,10 @@
   "restaurantId": "grodan-operahuset",
   "restaurantName": "Grodan Kungliga Operan",
   "sourceUrl": "https://www.grodan.se/kungligaoperan",
-  "scrapedAt": "2026-04-23T05:32:22.134Z",
-  "extractedBy": "selector",
+  "scrapedAt": "2026-04-23T05:38:39.172Z",
+  "extractedBy": "claude",
   "weekNumber": 17,
-  "year": 2026,
+  "year": null,
   "currency": "SEK",
   "priceNote": "Måndag- Fredag 11.30- 14.00 195 kr",
   "days": [
@@ -13,10 +13,10 @@
       "day": "Måndag",
       "dishes": [
         {
-          "name": "Måndag",
+          "name": "Tonkatsukyckling med krämig kålsallad, grillad lime, tonkatsusås, basmatiris",
           "description": null,
           "category": null,
-          "price": 195
+          "price": null
         }
       ]
     },
@@ -24,10 +24,10 @@
       "day": "Tisdag",
       "dishes": [
         {
-          "name": "Tisdag",
+          "name": "Bakad Laxfjäril med sparris, rädisor, vitvinssås, pommes duchesse",
           "description": null,
-          "category": null,
-          "price": 195
+          "category": "Fisk",
+          "price": null
         }
       ]
     },
@@ -35,10 +35,10 @@
       "day": "Onsdag",
       "dishes": [
         {
-          "name": "Onsdag",
+          "name": "Örtbakad Kycklingbröst med grillad savoykål, kronärtskockscrème, jordärtskockschips, tryffelpuré",
           "description": null,
-          "category": null,
-          "price": 195
+          "category": "Kött",
+          "price": null
         }
       ]
     },
@@ -46,10 +46,10 @@
       "day": "Torsdag",
       "dishes": [
         {
-          "name": "Torsdag",
+          "name": "Ungersk Gulasch med smetanainlagd gurka, champinjon, syrlig morot, stompad potatis",
           "description": null,
-          "category": null,
-          "price": 195
+          "category": "Kött",
+          "price": null
         }
       ]
     },
@@ -57,10 +57,10 @@
       "day": "Fredag",
       "dishes": [
         {
-          "name": "Fredag",
+          "name": "Grodans Cordon Bleu med syrad lök, lufttorkad skinka, svampsås, parmesanpotatis",
           "description": null,
-          "category": null,
-          "price": 195
+          "category": "Kött",
+          "price": null
         }
       ]
     }
