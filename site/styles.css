@@ -1,0 +1,161 @@
+:root {
+  --bg: #fbf7f0;
+  --ink: #1e1e1e;
+  --muted: #6b6257;
+  --accent: #2f5d3a;
+  --card: #ffffff;
+  --border: #e8e0d0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16140f;
+    --ink: #f1ece1;
+    --muted: #a49b8a;
+    --accent: #8fbf8e;
+    --card: #1f1d18;
+    --border: #2e2a22;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+header {
+  text-align: center;
+  padding: 2.5rem 1rem 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--ink);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.tab.active {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+main {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+}
+
+.restaurant {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.restaurant h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+}
+
+.restaurant .meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.day-block { margin-bottom: 1rem; }
+.day-block:last-child { margin-bottom: 0; }
+
+.day-block h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+ul.dishes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.dishes li {
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+ul.dishes li:last-child { border-bottom: 0; }
+
+.dish-name { font-weight: 500; }
+.dish-cat {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-right: 0.4rem;
+}
+.dish-desc {
+  color: var(--muted);
+  font-size: 0.9rem;
+  display: block;
+}
+.dish-price {
+  color: var(--muted);
+  font-size: 0.85rem;
+  float: right;
+}
+
+.price-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0.5rem 0 1rem;
+  font-style: italic;
+}
+
+.loading, .error, .empty {
+  text-align: center;
+  color: var(--muted);
+  padding: 2rem 1rem;
+}
+.error { color: #c0392b; }
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding: 2rem 1rem 3rem;
+}
+
+footer a { color: var(--accent); }

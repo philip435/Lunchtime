@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lunchtime — Kungsträdgården</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lunchtime</h1>
+      <p class="tagline">Dagens lunch kring Kungsträdgården</p>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab active" data-view="today">Idag</button>
+      <button class="tab" data-view="week">Veckan</button>
+    </nav>
+
+    <main id="app">
+      <p class="loading">Hämtar menyer…</p>
+    </main>
+
+    <footer>
+      <p>
+        Menyer skrapas automatiskt från restaurangernas sidor —
+        <a id="source-link" href="#">källa</a>.
+        <span id="updated"></span>
+      </p>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

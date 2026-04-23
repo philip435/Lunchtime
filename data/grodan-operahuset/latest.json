@@ -1,0 +1,12 @@
+{
+  "restaurantId": "grodan-operahuset",
+  "restaurantName": "Grodan Operahuset",
+  "sourceUrl": "https://www.grodan.se/operahuset/",
+  "scrapedAt": null,
+  "extractedBy": "placeholder",
+  "weekNumber": null,
+  "year": null,
+  "currency": "SEK",
+  "priceNote": "Menyn uppdateras automatiskt varje vardag. Vänta tills första scrapen kört.",
+  "days": []
+}

@@ -1,0 +1,18 @@
+{
+  "name": "lunchtime",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Lunch menu scraper and viewer for restaurants near Kungsträdgården",
+  "type": "module",
+  "scripts": {
+    "scrape": "node scraper/run.js",
+    "scrape:grodan": "node scraper/run.js grodan-operahuset"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.68.0",
+    "cheerio": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

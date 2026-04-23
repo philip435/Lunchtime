@@ -1,0 +1,13 @@
+{
+  "restaurants": [
+    {
+      "id": "grodan-operahuset",
+      "name": "Grodan Operahuset",
+      "url": "https://www.grodan.se/operahuset/",
+      "area": "Kungsträdgården",
+      "lat": 59.3295,
+      "lon": 18.0722,
+      "parser": "grodan-operahuset"
+    }
+  ]
+}
