@@ -1,20 +1,21 @@
 import * as cheerio from "cheerio";
 
-// Port of the Python reference parser. Grodan's page structure (observed):
+// Port of the Python reference parser for Grodan Kungliga Operan.
+//
+// Observed page structure:
 //
 //   <h2>Dagens Lunch</h2>
 //   <h?>V. 17</h?>
 //   <h?>Måndag- Fredag 11.30- 14.00 195 kr</h?>
-//   <h?>Måndag</h?>
-//   <h?|p>Tonkatsukyckling med picklade grönsaker …</h?>
+//   <h?>Måndag</h?>            ← weekday heading (may wrap text in a span)
+//   <h?|p>Tonkatsukyckling …</h?|p>
 //   <h?>Tisdag</h?>
 //   …
 //   <h2>Grodans Raggmunk</h2>   ← section boundary at same level
 //
-// Strategy: locate the "Dagens Lunch" heading, then walk the document in
-// order. Week number, price/hours line, day headings, and dish lines are
-// identified by simple regex / membership tests. Boundary is another
-// heading at the same level once we've consumed at least one weekday.
+// Walk document order. When we consume an element (weekday/week/price
+// heading, or a dish element) we skip that element's entire subtree — so a
+// <span> inside the heading is not re-read as the dish.
 
 const DAYS = ["Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag"];
 const DAYS_LOWER = DAYS.map((d) => d.toLowerCase());
@@ -31,7 +32,7 @@ export function parse(html) {
   if (!dagens) return null;
 
   const sectionLevel = Number(dagens.tagName[1]);
-  const ordered = documentOrderTags($);
+  const { ordered, subtreeEnd } = documentOrderTags($);
   const startIdx = ordered.indexOf(dagens);
   if (startIdx === -1) return null;
 
@@ -41,9 +42,11 @@ export function parse(html) {
   let producedAny = false;
   const dishes = {};
 
-  for (const el of ordered.slice(startIdx + 1)) {
+  let i = subtreeEnd.get(dagens) ?? startIdx + 1;
+  while (i < ordered.length) {
+    const el = ordered[i];
     const text = $(el).text().replace(/\s+/g, " ").trim();
-    if (!text) continue;
+    if (!text) { i++; continue; }
 
     const headingMatch = /^h([1-6])$/.exec(el.tagName);
     if (headingMatch) {
@@ -54,26 +57,37 @@ export function parse(html) {
 
       if (!week && /^v\.?\s*\d+/i.test(text)) {
         week = text;
+        i = subtreeEnd.get(el);
         continue;
       }
       if (!priceNote && /\d{1,2}[.:]\d{2}/.test(text) && /kr/i.test(text)) {
         priceNote = text;
+        i = subtreeEnd.get(el);
         continue;
       }
       if (DAYS_LOWER.includes(lower)) {
         pendingDay = DAYS[DAYS_LOWER.indexOf(lower)];
         producedAny = true;
+        i = subtreeEnd.get(el);
         continue;
       }
       if (pendingDay) {
         dishes[pendingDay] = text;
         pendingDay = null;
+        i = subtreeEnd.get(el);
         continue;
       }
-    } else if (pendingDay && isDishCandidate(el, text)) {
+      i++;
+      continue;
+    }
+
+    if (pendingDay && isDishCandidate(el, text)) {
       dishes[pendingDay] = text;
       pendingDay = null;
+      i = subtreeEnd.get(el);
+      continue;
     }
+    i++;
   }
 
   const weekNumber = week ? Number((week.match(/\d+/) || [])[0]) : null;
@@ -99,18 +113,24 @@ export function parse(html) {
   };
 }
 
+// Walk the DOM depth-first, emitting tags in document order. Also record
+// each tag's subtree end (exclusive index into `ordered`) so callers can
+// jump past an element's descendants in O(1).
 function documentOrderTags($) {
-  const result = [];
+  const ordered = [];
+  const subtreeEnd = new Map();
   (function walk(node) {
-    if (node.type === "tag") result.push(node);
+    let myIdx = -1;
+    if (node.type === "tag") {
+      myIdx = ordered.length;
+      ordered.push(node);
+    }
     if (node.children) for (const c of node.children) walk(c);
+    if (myIdx !== -1) subtreeEnd.set(node, ordered.length);
   })($.root().get(0));
-  return result;
+  return { ordered, subtreeEnd };
 }
 
-// A dish line is typically a <p>, <span>, <div>, or similar — not a container
-// that wraps further structure. Reject elements that contain other headings
-// or nested block children with their own text.
 function isDishCandidate(el, text) {
   if (!["p", "span", "div", "li", "strong", "em"].includes(el.tagName)) return false;
   if (text.length < 3 || text.length > 400) return false;
