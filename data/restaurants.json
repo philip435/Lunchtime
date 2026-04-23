@@ -2,8 +2,8 @@
   "restaurants": [
     {
       "id": "grodan-operahuset",
-      "name": "Grodan Operahuset",
-      "url": "https://www.grodan.se/operahuset/",
+      "name": "Grodan Kungliga Operan",
+      "url": "https://www.grodan.se/kungligaoperan",
       "area": "Kungsträdgården",
       "lat": 59.3295,
       "lon": 18.0722,
