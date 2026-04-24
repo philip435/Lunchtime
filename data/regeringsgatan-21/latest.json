@@ -2,7 +2,7 @@
   "restaurantId": "regeringsgatan-21",
   "restaurantName": "Regeringsgatan 21",
   "sourceUrl": "https://rg21.se/wp-content/uploads/2026/04/LUNCH-v.17.pdf",
-  "scrapedAt": "2026-04-23T12:17:56.388Z",
+  "scrapedAt": "2026-04-24T09:17:13.784Z",
   "extractedBy": "claude",
   "weekNumber": null,
   "year": 2026,
@@ -54,7 +54,7 @@
         },
         {
           "name": "Friterad sej",
-          "description": "Pommes frites, curryremoulad, citron, zucchini- och myntasallad",
+          "description": "Pommes frites, curryremoulad, citron, zucchini-och myntasallad",
           "category": "Fisk",
           "price": 162
         }
