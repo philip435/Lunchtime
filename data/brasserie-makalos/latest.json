@@ -2,7 +2,7 @@
   "restaurantId": "brasserie-makalos",
   "restaurantName": "Brasserie Makalös",
   "sourceUrl": "https://www.brasseriemakalos.se/lunchmeny/",
-  "scrapedAt": "2026-04-28T09:42:55.817Z",
+  "scrapedAt": "2026-04-29T09:35:48.942Z",
   "extractedBy": "claude",
   "weekNumber": 18,
   "year": 2026,
@@ -58,7 +58,7 @@
       "dishes": [
         {
           "name": "Varm primörsallad, rostade rotfrukter, gemsallad, sparris, honung, ädelost, grillad levain",
-          "description": null,
+          "description": "Végétarien 1",
           "category": "Vegetariskt",
           "price": 175
         }
