@@ -2,12 +2,12 @@
   "restaurantId": "brasserie-makalos",
   "restaurantName": "Brasserie Makalös",
   "sourceUrl": "https://www.brasseriemakalos.se/lunchmeny/",
-  "scrapedAt": "2026-04-29T09:35:48.942Z",
+  "scrapedAt": "2026-04-30T09:36:06.989Z",
   "extractedBy": "claude",
   "weekNumber": 18,
   "year": 2026,
   "currency": "SEK",
-  "priceNote": "Dagens Lunch 175 kr, mån - fre 11.30-15.00, lör 12:30-15:00",
+  "priceNote": "Dagens Lunch 175 kr (mån-fre 11.30-15.00, lör 12:30-15:00). Veckans vegetariska 175 kr",
   "days": [
     {
       "day": "Måndag",
@@ -49,17 +49,6 @@
           "name": "Rimmad lax, dillstuvad potatis, citron, senapssås",
           "description": null,
           "category": "Fisk",
-          "price": 175
-        }
-      ]
-    },
-    {
-      "day": "Lördag",
-      "dishes": [
-        {
-          "name": "Varm primörsallad, rostade rotfrukter, gemsallad, sparris, honung, ädelost, grillad levain",
-          "description": "Végétarien 1",
-          "category": "Vegetariskt",
           "price": 175
         }
       ]

@@ -2,12 +2,12 @@
   "restaurantId": "regeringsgatan-21",
   "restaurantName": "Regeringsgatan 21",
   "sourceUrl": "https://rg21.se/wp-content/uploads/2026/04/LUNCH-v.18.pdf",
-  "scrapedAt": "2026-04-29T09:35:41.784Z",
+  "scrapedAt": "2026-04-30T09:36:00.790Z",
   "extractedBy": "claude",
   "weekNumber": null,
   "year": 2026,
   "currency": "SEK",
-  "priceNote": "Dagens lunch 162 kr, ink sallad, bröd, kaffe, te",
+  "priceNote": "Dagens lunch 162 kr ink sallad, bröd, kaffe, te",
   "days": [
     {
       "day": "Måndag",
@@ -37,7 +37,7 @@
         },
         {
           "name": "Tuna Mac n Cheese",
-          "description": "Pico de gallo, habaneromajonnäs, koriander, kryddrostat panko",
+          "description": "Pico de gallo, habaneromajonn äs, koriander, kryddrostat panko",
           "category": "Fisk",
           "price": 162
         }
