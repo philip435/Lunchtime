@@ -2,7 +2,7 @@
   "restaurantId": "regeringsgatan-21",
   "restaurantName": "Regeringsgatan 21",
   "sourceUrl": "https://rg21.se/wp-content/uploads/2026/04/LUNCH-v.18.pdf",
-  "scrapedAt": "2026-04-30T09:36:00.790Z",
+  "scrapedAt": "2026-05-01T09:17:31.342Z",
   "extractedBy": "claude",
   "weekNumber": null,
   "year": 2026,
@@ -37,7 +37,7 @@
         },
         {
           "name": "Tuna Mac n Cheese",
-          "description": "Pico de gallo, habaneromajonn äs, koriander, kryddrostat panko",
+          "description": "Pico de gallo, habaneromajonnäs, koriander, kryddrostat panko",
           "category": "Fisk",
           "price": 162
         }

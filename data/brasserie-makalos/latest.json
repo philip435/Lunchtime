@@ -2,20 +2,20 @@
   "restaurantId": "brasserie-makalos",
   "restaurantName": "Brasserie Makalös",
   "sourceUrl": "https://www.brasseriemakalos.se/lunchmeny/",
-  "scrapedAt": "2026-04-30T09:36:06.989Z",
+  "scrapedAt": "2026-05-01T09:17:37.910Z",
   "extractedBy": "claude",
-  "weekNumber": 18,
+  "weekNumber": 19,
   "year": 2026,
   "currency": "SEK",
-  "priceNote": "Dagens Lunch 175 kr (mån-fre 11.30-15.00, lör 12:30-15:00). Veckans vegetariska 175 kr",
+  "priceNote": "175 kr",
   "days": [
     {
       "day": "Måndag",
       "dishes": [
         {
-          "name": "Citronmarinerad kyckling, filé Primörsallad, ramlsöksemulsion",
+          "name": "Grillad laxschnitzel, sparris, beurre blanc, kokt dillpotatis",
           "description": null,
-          "category": "Kött",
+          "category": "Fisk",
           "price": 175
         }
       ]
@@ -24,7 +24,7 @@
       "day": "Tisdag",
       "dishes": [
         {
-          "name": "Kalvsauté \"Zürich\", svamp, grädde, vitt vin, purjolökspotatis",
+          "name": "Kyckling Jus de Pomme, kycklinglårfilé, äpplecider, dijon, grädde",
           "description": null,
           "category": "Kött",
           "price": 175
@@ -35,7 +35,7 @@
       "day": "Onsdag",
       "dishes": [
         {
-          "name": "Halstrad råbiff, kapris, lök, dijon, betor, äggula, råstekt potatis, persiljesmör",
+          "name": "Grillad flankstek, haricots verts, grillad tomat, choronsås, pommes allumettes",
           "description": null,
           "category": "Kött",
           "price": 175
@@ -46,9 +46,20 @@
       "day": "Torsdag",
       "dishes": [
         {
-          "name": "Rimmad lax, dillstuvad potatis, citron, senapssås",
+          "name": "Havets Wallenbergare, ärtsallad, kräftstjärtar, tomatiserat gräddskum",
           "description": null,
           "category": "Fisk",
+          "price": 175
+        }
+      ]
+    },
+    {
+      "day": "Fredag",
+      "dishes": [
+        {
+          "name": "Fläskschnitzel, kapris, citron, anjovis, paprikasmör, pommes allumettes",
+          "description": null,
+          "category": "Kött",
           "price": 175
         }
       ]
