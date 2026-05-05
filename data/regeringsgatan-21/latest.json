@@ -2,7 +2,7 @@
   "restaurantId": "regeringsgatan-21",
   "restaurantName": "Regeringsgatan 21",
   "sourceUrl": "https://rg21.se/wp-content/uploads/2026/05/LUNCH-v.19.pdf",
-  "scrapedAt": "2026-05-04T09:38:52.377Z",
+  "scrapedAt": "2026-05-05T09:30:03.615Z",
   "extractedBy": "claude",
   "weekNumber": null,
   "year": 2026,
@@ -54,7 +54,7 @@
         },
         {
           "name": "Pocherad Fjällbrosme",
-          "description": "Stuvad purjolök, kokt potatis, pickled gurksallad, friterad pommes pinnes",
+          "description": "Stuvad purjolök, kokt potatis, picklad gurksallad, friterad pommes pinnes",
           "category": "Fisk",
           "price": 162
         }
