@@ -2,19 +2,19 @@
   "restaurantId": "brasserie-makalos",
   "restaurantName": "Brasserie Makalös",
   "sourceUrl": "https://www.brasseriemakalos.se/lunchmeny/",
-  "scrapedAt": "2026-05-05T09:30:12.075Z",
+  "scrapedAt": "2026-05-06T09:58:12.757Z",
   "extractedBy": "claude",
   "weekNumber": 19,
   "year": 2026,
   "currency": "SEK",
-  "priceNote": "Dagens lunch 175 kr (mån-fre 11:30-15:00, lör 12:30-15:00)",
+  "priceNote": "Dagens Lunch 175 kr (mån - fre 11.30-15.00, lör 12:30-15:00). Veckans vegetariska 175 kr.",
   "days": [
     {
       "day": "Måndag",
       "dishes": [
         {
-          "name": "Grillad laxschnitzel",
-          "description": "sparris, beurre blanc, kokt dillpotatis",
+          "name": "Grillad laxschnitzel, sparris, beurre blanc, kokt dillpotatis",
+          "description": null,
           "category": "Fisk",
           "price": 175
         }
@@ -24,8 +24,8 @@
       "day": "Tisdag",
       "dishes": [
         {
-          "name": "Kyckling Jus de Pomme",
-          "description": "kycklinglårfilé, äpplecider, dijon, grädde",
+          "name": "Kyckling Jus de Pomme, kycklinglårfilé, äpplecider, dijon, grädde",
+          "description": null,
           "category": "Kött",
           "price": 175
         }
@@ -35,8 +35,8 @@
       "day": "Onsdag",
       "dishes": [
         {
-          "name": "Grillad flankstek",
-          "description": "haricots verts, grillad tomat, choronsås, pommes allumettes",
+          "name": "Grillad flankstek, haricots verts, grillad tomat, choronsås, pommes allumettes",
+          "description": null,
           "category": "Kött",
           "price": 175
         }
@@ -46,8 +46,8 @@
       "day": "Torsdag",
       "dishes": [
         {
-          "name": "Havets Wallenbergare",
-          "description": "ärtsallad, kräftstjärtar, tomatiserat gräddskum",
+          "name": "Havets Wallenbergare, ärtsallad, kräftstjärtar, tomatiserat gräddskum",
+          "description": null,
           "category": "Fisk",
           "price": 175
         }
@@ -57,8 +57,8 @@
       "day": "Fredag",
       "dishes": [
         {
-          "name": "Fläskschnitzel",
-          "description": "kapris, citron, anjovis, paprikasmör, pommes allumettes",
+          "name": "Fläskschnitzel, kapris, citron, anjovis, paprikasmör, pommes allumettes",
+          "description": null,
           "category": "Kött",
           "price": 175
         }
