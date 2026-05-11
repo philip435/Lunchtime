@@ -2,9 +2,9 @@ name: Scrape lunch menus
 
 on:
   schedule:
-    # Monday-Friday 07:30 UTC = 09:30 Europe/Stockholm (08:30 during winter)
-    # We run daily so late-week menu updates (and price changes) are captured.
-    - cron: "30 7 * * 1-5"
+    # Monday 07:30 UTC = 09:30 Europe/Stockholm (08:30 during winter).
+    # Restaurants publish the full week on Monday, so one scrape per week is enough.
+    - cron: "30 7 * * 1"
   workflow_dispatch:
     inputs:
       force_claude:

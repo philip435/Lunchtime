@@ -23,7 +23,7 @@ Currently tracked:
                                                        └──────────────┘
 ```
 
-1. `.github/workflows/scrape.yml` runs Mon–Fri at 07:30 UTC (09:30 Stockholm).
+1. `.github/workflows/scrape.yml` runs Mondays at 07:30 UTC (09:30 Stockholm).
 2. `scraper/run.js` loads `data/restaurants.json`, fetches each site, and tries
    the restaurant-specific selector parser in `scraper/restaurants/*.js`.
 3. If the selector parser returns nothing, the HTML is sent to Claude
