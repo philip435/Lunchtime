@@ -2,7 +2,7 @@
   "restaurantId": "regeringsgatan-21",
   "restaurantName": "Regeringsgatan 21",
   "sourceUrl": "https://rg21.se/wp-content/uploads/2026/05/LUNCH-v.20.pdf",
-  "scrapedAt": "2026-05-12T10:07:09.905Z",
+  "scrapedAt": "2026-05-13T10:05:33.034Z",
   "extractedBy": "claude",
   "weekNumber": null,
   "year": 2026,
@@ -66,7 +66,7 @@
         {
           "name": "Soltorkad tomat- och basilikafylld schnitzel",
           "description": "Rostad potatis, rödvinssås, picklad lök- och spenatsallad",
-          "category": "Kött",
+          "category": null,
           "price": 162
         }
       ]
