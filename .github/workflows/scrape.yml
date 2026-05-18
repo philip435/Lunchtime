@@ -38,7 +38,11 @@ jobs:
           FORCE_CLAUDE: ${{ inputs.force_claude == 'true' && '1' || '' }}
         run: npm run scrape
 
+      # Run even if the scrape step exited non-zero: run.js fails the job when
+      # any single restaurant errors, but the others may still have produced
+      # valid data we want to preserve.
       - name: Commit updated menus
+        if: always()
         run: |
           git config user.name "lunchtime-bot"
           git config user.email "lunchtime-bot@users.noreply.github.com"
