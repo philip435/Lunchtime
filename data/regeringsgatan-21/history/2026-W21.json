@@ -2,7 +2,7 @@
   "restaurantId": "regeringsgatan-21",
   "restaurantName": "Regeringsgatan 21",
   "sourceUrl": "https://rg21.se/wp-content/uploads/2026/05/LUNCH-v.21.pdf",
-  "scrapedAt": "2026-05-19T05:09:49.622Z",
+  "scrapedAt": "2026-05-19T10:48:05.628Z",
   "extractedBy": "claude",
   "weekNumber": null,
   "year": 2026,
@@ -54,7 +54,7 @@
         },
         {
           "name": "Fish n chips",
-          "description": "Currymajonnäs, äpple, lök, dill- och bladpersilje sallad, citron",
+          "description": "Currymajonnäs, äpple, lök, dill- och bladpersiljesallad, citron",
           "category": "Fisk",
           "price": 162
         }
