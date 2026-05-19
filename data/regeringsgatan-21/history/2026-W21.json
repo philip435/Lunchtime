@@ -2,7 +2,7 @@
   "restaurantId": "regeringsgatan-21",
   "restaurantName": "Regeringsgatan 21",
   "sourceUrl": "https://rg21.se/wp-content/uploads/2026/05/LUNCH-v.21.pdf",
-  "scrapedAt": "2026-05-18T11:31:14.424Z",
+  "scrapedAt": "2026-05-19T05:09:49.622Z",
   "extractedBy": "claude",
   "weekNumber": null,
   "year": 2026,
@@ -37,7 +37,7 @@
         },
         {
           "name": "Brödbakad torsk nicoise",
-          "description": "Kokt potatis, ägg, haricots verts, cocktail tomater, hyvlad parmesan, hjärtsallad, parmesanmajonnäs, oliver",
+          "description": "Kokt potatis, ägg, haricotsverts, cocktail tomater, hyvlad parmesan, hjärtsallad, parmesanmajonnäs, oliver",
           "category": "Fisk",
           "price": 162
         }
@@ -54,7 +54,7 @@
         },
         {
           "name": "Fish n chips",
-          "description": "Currymajonnäs, äpple, lök, dill- och bladpersiljesallad, citron",
+          "description": "Currymajonnäs, äpple, lök, dill- och bladpersilje sallad, citron",
           "category": "Fisk",
           "price": 162
         }
@@ -82,7 +82,7 @@
       "dishes": [
         {
           "name": "Steak minut",
-          "description": "Pommes frites, béarnaisesås, tomat- och ruccolasallad",
+          "description": "Pommes frites, bearnaisesås, tomat- och ruccolasallad",
           "category": "Kött",
           "price": 162
         },

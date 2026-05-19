@@ -2,12 +2,12 @@
   "restaurantId": "brasserie-makalos",
   "restaurantName": "Brasserie Makalös",
   "sourceUrl": "https://www.brasseriemakalos.se/lunchmeny/",
-  "scrapedAt": "2026-05-18T11:31:20.568Z",
+  "scrapedAt": "2026-05-19T05:09:55.461Z",
   "extractedBy": "claude",
   "weekNumber": 21,
   "year": 2026,
   "currency": "SEK",
-  "priceNote": "Dagens Lunch 175 kr, mån - fre 11.30-15.00, lör 12:30-15:00",
+  "priceNote": "Dagens lunch 175 kr (mån-fre 11:30-15:00, lör 12:30-15:00)",
   "days": [
     {
       "day": "Måndag",

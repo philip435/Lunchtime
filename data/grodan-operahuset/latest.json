@@ -2,12 +2,12 @@
   "restaurantId": "grodan-operahuset",
   "restaurantName": "Grodan Kungliga Operan",
   "sourceUrl": "https://www.grodan.se/kungligaoperan",
-  "scrapedAt": "2026-05-18T11:31:04.666Z",
-  "extractedBy": "selector",
+  "scrapedAt": "2026-05-19T05:09:39.814Z",
+  "extractedBy": "claude",
   "weekNumber": 21,
   "year": 2026,
   "currency": "SEK",
-  "priceNote": "Måndag- Fredag 11.30- 14.00 195 kr",
+  "priceNote": "Måndag-Fredag 11.30-14.00: 195 kr",
   "days": [
     {
       "day": "Måndag",
@@ -15,7 +15,7 @@
         {
           "name": "Biff á la Lindström med tomat-& löksallad, örtsmör, skysås, råstekt potatis",
           "description": null,
-          "category": null,
+          "category": "Kött",
           "price": 195
         }
       ]
@@ -26,7 +26,7 @@
         {
           "name": "Ångad Sejfilé med räkor, pepparrot, citron, brynt smör, kokt potatis",
           "description": null,
-          "category": null,
+          "category": "Fisk",
           "price": 195
         }
       ]
@@ -37,7 +37,7 @@
         {
           "name": "Grillad Fläskfilé med grillade primörer, rostad paprikacrème, rödvinssås, friterad potatis",
           "description": null,
-          "category": null,
+          "category": "Kött",
           "price": 195
         }
       ]
@@ -48,7 +48,7 @@
         {
           "name": "Fläskschnitzel med svenska ärtor, bönor, picklad lök, svampsås, stompad potatis",
           "description": null,
-          "category": null,
+          "category": "Kött",
           "price": 195
         }
       ]
@@ -59,7 +59,7 @@
         {
           "name": "Rostbiff med sparris, rostad lök, citron, ramslökscrème, fransk potatissallad",
           "description": null,
-          "category": null,
+          "category": "Kött",
           "price": 195
         }
       ]
