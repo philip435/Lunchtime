@@ -2,7 +2,7 @@
   "restaurantId": "regeringsgatan-21",
   "restaurantName": "Regeringsgatan 21",
   "sourceUrl": "https://rg21.se/wp-content/uploads/2026/05/LUNCH-v.21.pdf",
-  "scrapedAt": "2026-05-21T10:52:54.373Z",
+  "scrapedAt": "2026-05-22T10:34:41.360Z",
   "extractedBy": "claude",
   "weekNumber": null,
   "year": 2026,
@@ -47,14 +47,14 @@
       "day": "Onsdag",
       "dishes": [
         {
-          "name": "Yakiniku",
+          "name": "\"Yakiniku\"",
           "description": "Soja- och ingefärsstekt nötfärs, sojabönor, jasminris, purjolök, morot- och sesamsallad, koriander",
           "category": "Kött",
           "price": 162
         },
         {
           "name": "Fish n chips",
-          "description": "Currymajonnäs, äpple, lök, dill- och bladpersilje, citron",
+          "description": "Currymajonnäs, äpple, lök, dill- och bladpersiljessallad, citron",
           "category": "Fisk",
           "price": 162
         }
