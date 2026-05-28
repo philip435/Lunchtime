@@ -2,7 +2,7 @@
   "restaurantId": "regeringsgatan-21",
   "restaurantName": "Regeringsgatan 21",
   "sourceUrl": "https://rg21.se/wp-content/uploads/2026/05/LUNCH-v.22.pdf",
-  "scrapedAt": "2026-05-27T11:04:45.771Z",
+  "scrapedAt": "2026-05-28T11:06:30.578Z",
   "extractedBy": "claude",
   "weekNumber": null,
   "year": 2026,
@@ -31,13 +31,13 @@
       "dishes": [
         {
           "name": "Kimchi fried chicken",
-          "description": "Jasminris, råkost- & böngroddsallad, vårlök",
+          "description": "Jasminris, råkost & böngroddsallad, vårlök",
           "category": "Kött",
           "price": 162
         },
         {
           "name": "Stekt strömming",
-          "description": "Dill- & dijonsmör, sockerärtor, lök, brynt smör, rårörda lingon, potatispuré",
+          "description": "Dill & dijonsmör, sockerärtor, lök, brynt smör, rårörda lingon, potatispuré",
           "category": "Fisk",
           "price": 162
         }
@@ -48,13 +48,13 @@
       "dishes": [
         {
           "name": "Raggmunk med stekt fläsk",
-          "description": "Morot- & vitkål, rårörda lingon, brynt smör, persilja",
+          "description": "Morot & vitkål, rårörda lingon, brynt smör, persilja",
           "category": "Kött",
           "price": 162
         },
         {
           "name": "Halstrad gös",
-          "description": "Sparrisrisotto, fänkålsvelouté, libbsticka- & kålrabbisallad",
+          "description": "Sparrisrisotto, fänkålsvelouté, libbsticka & kålrabbisallad",
           "category": "Fisk",
           "price": 162
         }
@@ -65,7 +65,7 @@
       "dishes": [
         {
           "name": "Cordon bleu",
-          "description": "Ost- & skinkfylld schnitzel, krämig potatissallad, rädis- & körvelsallad, rödvinssås",
+          "description": "Ost & skinkfylld schnitzel, krämig potatissallad, rädis & körvelsallad, rödvinssås",
           "category": "Kött",
           "price": 162
         },
