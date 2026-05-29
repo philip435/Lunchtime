@@ -2,19 +2,19 @@
   "restaurantId": "brasserie-makalos",
   "restaurantName": "Brasserie Makalös",
   "sourceUrl": "https://www.brasseriemakalos.se/lunchmeny/",
-  "scrapedAt": "2026-05-28T11:06:37.244Z",
+  "scrapedAt": "2026-05-29T10:57:24.400Z",
   "extractedBy": "claude",
   "weekNumber": 22,
   "year": 2026,
   "currency": "SEK",
-  "priceNote": "Dagens Lunch 175 kr, mån - fre 11.30-15.00, lör 12:30-15.00",
+  "priceNote": "Dagens lunch 175 kr, mån - fre 11.30-15.00, lör 12:30-15:00",
   "days": [
     {
       "day": "Måndag",
       "dishes": [
         {
-          "name": "Caesar",
-          "description": "grillad kyckling, romansallad, Caesardressing, bacon, parmesan, rostad potatis",
+          "name": "\"Caesar\", grillad kyckling, romansallad, Caesardressing, bacon, parmesan, rostad potatis",
+          "description": null,
           "category": "Kött",
           "price": 175
         }
@@ -24,8 +24,8 @@
       "day": "Tisdag",
       "dishes": [
         {
-          "name": "Cordon bleu",
-          "description": "fylld fläskschnitzel, bayonne, citronsmör, pommes allumettes",
+          "name": "Cordon bleu, fylld fläskschnitzel, bayonne, citronsmör, pommes allumettes",
+          "description": null,
           "category": "Kött",
           "price": 175
         }
@@ -35,8 +35,8 @@
       "day": "Onsdag",
       "dishes": [
         {
-          "name": "Skaldjursfärserad flundra",
-          "description": "beurre blanc, dill, gräslök, grönsaksjulienne",
+          "name": "Skaldjursfärserad flundra, beurre blanc, dill, gräslök, grönsaksjulienne",
+          "description": null,
           "category": "Fisk",
           "price": 175
         }
@@ -46,8 +46,8 @@
       "day": "Torsdag",
       "dishes": [
         {
-          "name": "Oxjärpar",
-          "description": "rårörda lingon, picklad gurka, potatisstomp, gräddsås",
+          "name": "Oxjärpar, rårörda lingon, picklad gurka, potatisstomp, gräddsås",
+          "description": null,
           "category": "Kött",
           "price": 175
         }
@@ -57,8 +57,8 @@
       "day": "Fredag",
       "dishes": [
         {
-          "name": "Mixed grill",
-          "description": "pepparsås, haricots verts, råstekt vitlökspotatis, tomatsallad",
+          "name": "Mixed grill, pepparsås, haricots verts, råstekt vitlökspotatis, tomatsallad",
+          "description": null,
           "category": "Kött",
           "price": 175
         }
