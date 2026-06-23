@@ -2,9 +2,9 @@
   "restaurantId": "grodan-operahuset",
   "restaurantName": "Grodan Kungliga Operan",
   "sourceUrl": "https://www.grodan.se/kungligaoperan",
-  "scrapedAt": "2026-06-22T13:11:56.283Z",
+  "scrapedAt": "2026-06-23T10:47:10.200Z",
   "extractedBy": "selector",
-  "weekNumber": 25,
+  "weekNumber": 26,
   "year": 2026,
   "currency": "SEK",
   "priceNote": "Måndag- Fredag 11.30- 14.00 195 kr",
@@ -13,7 +13,7 @@
       "day": "Måndag",
       "dishes": [
         {
-          "name": "Örtbakad Kyckling med tomat, jordärtskockschips, örtvelouté, parmesan, risoni",
+          "name": "Fetaostbiffar med vitlöksfrästa haricots verts, skysås, örtaioli, couscous",
           "description": null,
           "category": null,
           "price": 195
@@ -24,7 +24,7 @@
       "day": "Tisdag",
       "dishes": [
         {
-          "name": "Ångad Sejfilé med grillad vit sparris, ramslök, brynt Sandefjordsås, färskpotatis",
+          "name": "Grodans Fish & Chips med fänkål, dill, citron, dansk remoulad, friterad färskpotatis",
           "description": null,
           "category": null,
           "price": 195
@@ -35,7 +35,7 @@
       "day": "Onsdag",
       "dishes": [
         {
-          "name": "Fläskschnitzel med rädissallad, citron, rödvinssås, örtsmör, krossad potatis",
+          "name": "Nattbakad Kalv med grillade primörer, syrad lök, cognacsky, pommes Anna",
           "description": null,
           "category": null,
           "price": 195
@@ -46,7 +46,18 @@
       "day": "Torsdag",
       "dishes": [
         {
-          "name": "Biff á la Lindström med tomat-& löksallad, rödvinssky, råstekt potatis",
+          "name": "Fläskrullader med saltgurka, Västerbottensost, rårörda lingon, gräddsky, potatispuré",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    },
+    {
+      "day": "Fredag",
+      "dishes": [
+        {
+          "name": "Kycklingschnitzel med grillad tomat, örtsmör, rödvinssky, friterad potatis",
           "description": null,
           "category": null,
           "price": 195
