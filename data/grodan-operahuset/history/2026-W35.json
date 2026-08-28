@@ -2,9 +2,9 @@
   "restaurantId": "grodan-operahuset",
   "restaurantName": "Grodan Kungliga Operan",
   "sourceUrl": "https://www.grodan.se/kungligaoperan",
-  "scrapedAt": "2026-08-27T18:23:03.697Z",
+  "scrapedAt": "2026-08-28T19:33:38.056Z",
   "extractedBy": "selector",
-  "weekNumber": 35,
+  "weekNumber": 36,
   "year": 2026,
   "currency": "SEK",
   "priceNote": "Måndag- Fredag 11.30- 14.00 195 kr",
@@ -13,7 +13,7 @@
       "day": "Måndag",
       "dishes": [
         {
-          "name": "Stekt fläsk med rårörda lingon, friterad persilja, löksås, kokt potatis",
+          "name": "Stängt",
           "description": null,
           "category": null,
           "price": 195
@@ -24,7 +24,7 @@
       "day": "Tisdag",
       "dishes": [
         {
-          "name": "Halstrad Lax med cocktailtomat, konfiterad buritanalök, krämig dillrisoni",
+          "name": "Stängt",
           "description": null,
           "category": null,
           "price": 195
@@ -35,7 +35,7 @@
       "day": "Onsdag",
       "dishes": [
         {
-          "name": "Coq au Vin Blanc med champinjoner, morot, pärllök, tryffelpuré",
+          "name": "Havets wallenbergare med petit pois, fänkål, dill, citron, brynt smör, potatispuré",
           "description": null,
           "category": null,
           "price": 195
@@ -46,7 +46,7 @@
       "day": "Torsdag",
       "dishes": [
         {
-          "name": "Pannbiff med saltgurka, rårörda svarta vinbär, karamelliserad löksky, potatispuré",
+          "name": "Köttbullar med rårörda lingon, pressgurka, gräddsås, potatispuré",
           "description": null,
           "category": null,
           "price": 195
@@ -57,7 +57,7 @@
       "day": "Fredag",
       "dishes": [
         {
-          "name": "Kyckling parmigiana med parmesan, curryrostad blomkål, basmatiris",
+          "name": "Kycklingtonkatsu med grillad lime, pack choy, asiatisk coleslaw, rostat sesamris",
           "description": null,
           "category": null,
           "price": 195
