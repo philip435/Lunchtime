@@ -1,0 +1,68 @@
+{
+  "restaurantId": "grodan-operahuset",
+  "restaurantName": "Grodan Kungliga Operan",
+  "sourceUrl": "https://www.grodan.se/kungligaoperan",
+  "scrapedAt": "2026-10-12T16:55:40.245Z",
+  "extractedBy": "selector",
+  "weekNumber": 42,
+  "year": 2026,
+  "currency": "SEK",
+  "priceNote": "Måndag- Fredag 11.30- 14.00 195 kr",
+  "days": [
+    {
+      "day": "Måndag",
+      "dishes": [
+        {
+          "name": "Sojaglaserad Kyckling med het spetskålssallad, rostade sesamfrön, yozumajonnäs, basmatiris",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    },
+    {
+      "day": "Tisdag",
+      "dishes": [
+        {
+          "name": "Ångade Sejfilé med grönkål, gulbeta, dill, äggsås, kokt potatis",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    },
+    {
+      "day": "Onsdag",
+      "dishes": [
+        {
+          "name": "Fransk Kycklinggryta med dijon, tomat, dragon, syrad morot, persilja, potatis",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    },
+    {
+      "day": "Torsdag",
+      "dishes": [
+        {
+          "name": "Pytt Bellman med stekt ägg, inlagd rödbeta, saltgurka, friterad persilja",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    },
+    {
+      "day": "Fredag",
+      "dishes": [
+        {
+          "name": "Kycklingschnitzel med krämig kålsallad, syrad lök, skysås, rostad potatis",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    }
+  ]
+}
