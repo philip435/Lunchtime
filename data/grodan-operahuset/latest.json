@@ -2,9 +2,9 @@
   "restaurantId": "grodan-operahuset",
   "restaurantName": "Grodan Kungliga Operan",
   "sourceUrl": "https://www.grodan.se/kungligaoperan",
-  "scrapedAt": "2026-10-16T12:39:25.020Z",
+  "scrapedAt": "2026-10-19T14:54:28.720Z",
   "extractedBy": "selector",
-  "weekNumber": 42,
+  "weekNumber": 43,
   "year": 2026,
   "currency": "SEK",
   "priceNote": "Måndag- Fredag 11.30- 14.00 195 kr",
@@ -13,7 +13,7 @@
       "day": "Måndag",
       "dishes": [
         {
-          "name": "Sojaglaserad Kyckling med het spetskålssallad, rostade sesamfrön, yozumajonnäs, basmatiris",
+          "name": "Grillad Kycklingfilé med rostad blomkål, soltorkad tomatsås, basmatiris",
           "description": null,
           "category": null,
           "price": 195
@@ -24,7 +24,7 @@
       "day": "Tisdag",
       "dishes": [
         {
-          "name": "Ångade Sejfilé med grönkål, gulbeta, dill, äggsås, kokt potatis",
+          "name": "Bakad Laxfjäril med bakad fänkål, dill, vitvinsås, stompad potatis",
           "description": null,
           "category": null,
           "price": 195
@@ -35,7 +35,7 @@
       "day": "Onsdag",
       "dishes": [
         {
-          "name": "Fransk Kycklinggryta med dijon, tomat, dragon, syrad morot, persilja, potatis",
+          "name": "Köttbullar med pressgurka, lingon, gräddsås, potatispuré",
           "description": null,
           "category": null,
           "price": 195
@@ -46,7 +46,7 @@
       "day": "Torsdag",
       "dishes": [
         {
-          "name": "Pytt Bellman med stekt ägg, inlagd rödbeta, saltgurka, friterad persilja",
+          "name": "Nattbakad Fläskkarré med vitlöksrostad broccoli, syrlig kålsallad, grönpepparsås, parmesanpotatis",
           "description": null,
           "category": null,
           "price": 195
@@ -57,7 +57,7 @@
       "day": "Fredag",
       "dishes": [
         {
-          "name": "Kycklingschnitzel med krämig kålsallad, syrad lök, skysås, rostad potatis",
+          "name": "Grodans Plankstek med baconlindad haricot verts, tomat, cognacsås, pommes duchesse",
           "description": null,
           "category": null,
           "price": 195
