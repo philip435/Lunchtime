@@ -1,0 +1,68 @@
+{
+  "restaurantId": "grodan-operahuset",
+  "restaurantName": "Grodan Kungliga Operan",
+  "sourceUrl": "https://www.grodan.se/kungligaoperan",
+  "scrapedAt": "2026-11-09T17:45:05.218Z",
+  "extractedBy": "selector",
+  "weekNumber": 46,
+  "year": 2026,
+  "currency": "SEK",
+  "priceNote": "Måndag- Fredag 11.30- 14.00 195 kr",
+  "days": [
+    {
+      "day": "Måndag",
+      "dishes": [
+        {
+          "name": "Fläsk med löksås, friterad persilja, rårörda svarta vinbär, gulbeta, kokt potatis",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    },
+    {
+      "day": "Tisdag",
+      "dishes": [
+        {
+          "name": "Friterad Sejfilé med asiatisk coleslaw, grillad lime, sötsursås, sticky rice",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    },
+    {
+      "day": "Onsdag",
+      "dishes": [
+        {
+          "name": "Fläskrullader med Västerbottensost, dijon, bacon, gräddsås, potatispure",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    },
+    {
+      "day": "Torsdag",
+      "dishes": [
+        {
+          "name": "Coq au Vin Blanc med konfiterad champinjon, syrad morot, tryffelpuré",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    },
+    {
+      "day": "Fredag",
+      "dishes": [
+        {
+          "name": "Kalvfärsbiffar med fetaost, tzatziki, tomat-& löksallad, friterad klyftpotatis",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    }
+  ]
+}
