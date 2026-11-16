@@ -1,0 +1,68 @@
+{
+  "restaurantId": "grodan-operahuset",
+  "restaurantName": "Grodan Kungliga Operan",
+  "sourceUrl": "https://www.grodan.se/kungligaoperan",
+  "scrapedAt": "2026-11-16T17:19:43.100Z",
+  "extractedBy": "selector",
+  "weekNumber": 47,
+  "year": 2026,
+  "currency": "SEK",
+  "priceNote": "Måndag- Fredag 11.30- 14.00 195 kr",
+  "days": [
+    {
+      "day": "Måndag",
+      "dishes": [
+        {
+          "name": "Ankbröst Barbarie med höstprimörer, grönpepparsås, bärkompott, pommes Anna",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    },
+    {
+      "day": "Tisdag",
+      "dishes": [
+        {
+          "name": "Bakad Sejfilé med bland svamp, grönkål, havskräftsvelouté, potatis stomp",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    },
+    {
+      "day": "Onsdag",
+      "dishes": [
+        {
+          "name": "Biff á la Lindström med tomat-& löksallad, örtsmör, skysås, råstekt potatis",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    },
+    {
+      "day": "Torsdag",
+      "dishes": [
+        {
+          "name": "Pytt Bellman med stekt ägg, saltgurka, friterad persilja, inlagda gulbetor",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    },
+    {
+      "day": "Fredag",
+      "dishes": [
+        {
+          "name": "Kyckling Parmigiana med parmesan, dragonpicklad rättika, parmesanpotatis",
+          "description": null,
+          "category": null,
+          "price": 195
+        }
+      ]
+    }
+  ]
+}
